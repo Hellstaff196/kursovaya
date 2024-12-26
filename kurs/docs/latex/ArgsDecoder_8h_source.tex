@@ -1,0 +1,41 @@
+\hypertarget{ArgsDecoder_8h_source}{}\doxysection{Args\+Decoder.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Error.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{classArgsDecoder}{ArgsDecoder}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21     \mbox{\hyperlink{classArgsDecoder_a3eb496c3d243556422528197fc7ae095}{ArgsDecoder}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{27     \textcolor{keywordtype}{string} \mbox{\hyperlink{classArgsDecoder_a7a75a20a3e50d01c328574fd5110ddba}{getServerAddress}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} \mbox{\hyperlink{classArgsDecoder_a1068cda77fd3af972116505bb53e50a2}{getServerPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} \mbox{\hyperlink{classArgsDecoder_af885d726d2b9fa60d8caf0a9c5649981}{getInputFilePath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{string} \mbox{\hyperlink{classArgsDecoder_a18a61c04714538dbea4019fe0d5b42b7}{getOutputFilePath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{string} \mbox{\hyperlink{classArgsDecoder_a3dc2d305ece5d59b90c1506bd82b5661}{getConfigFilePath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArgsDecoder_a41bad240c33abe825bd56fd63e34ca41}{decodeArgs}}(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} *argv[]);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{classArgsDecoder_aca2e5bc9d1e1f47a1b073a4be82b7673}{displayHelp}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{keyword}{private}:}
+\DoxyCodeLine{67     \textcolor{keywordtype}{string} serverAddress;     }
+\DoxyCodeLine{68     uint16\_t serverPort;      }
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} inputFilePath;     }
+\DoxyCodeLine{70     \textcolor{keywordtype}{string} outputFilePath;    }
+\DoxyCodeLine{71     \textcolor{keywordtype}{string} configFilePath;    }
+\DoxyCodeLine{72 \};}
+
+\end{DoxyCode}

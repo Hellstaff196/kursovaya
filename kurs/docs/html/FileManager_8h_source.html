@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NetClient: Исходный файл FileManager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">NetClient
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.4 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">FileManager.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;Error.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classFileManager.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classFileManager.html">FileManager</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="classFileManager.html#a650dbeff16f7b56768105e554390939f">FileManager</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;configPath, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;inputPath, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;outputPath);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    array&lt;string, 2&gt; <a class="code hl_function" href="classFileManager.html#a4e7f95c2102da1b85e9876e5951ca3d8">loadCredentials</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    vector&lt;vector&lt;double&gt;&gt; <a class="code hl_function" href="classFileManager.html#a8e8cc4299102a22d88f64ccd4f96c0d3">readVectors</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classFileManager.html#a4881171db0ab8aea96d2bdf9ca5e3e64">writeVectors</a>(<span class="keyword">const</span> vector&lt;double&gt; &amp;data) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;<a class="code hl_function" href="classFileManager.html#ab35d5f85142f3445748407fda84ddd49">getConfigPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;<a class="code hl_function" href="classFileManager.html#ac9683cc4bb9f9e3cc7be1e089670d31c">getInputPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;<a class="code hl_function" href="classFileManager.html#ac4cfaf245931ae2f6a9a1b4a532b42d1">getOutputPath</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">string</span> configPath;    </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">string</span> inputPath;     </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">string</span> outputPath;    </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> printVector(<span class="keyword">const</span> vector&lt;double&gt; &amp;data);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">void</span> printVectors(<span class="keyword">const</span> vector&lt;vector&lt;double&gt;&gt; &amp;data);</div>
+<div class="ttc" id="aclassFileManager_html"><div class="ttname"><a href="classFileManager.html">FileManager</a></div><div class="ttdoc">Класс для управления файлами конфигурации, входных и выходных данных.</div><div class="ttdef"><b>Definition:</b> FileManager.h:19</div></div>
+<div class="ttc" id="aclassFileManager_html_a4881171db0ab8aea96d2bdf9ca5e3e64"><div class="ttname"><a href="classFileManager.html#a4881171db0ab8aea96d2bdf9ca5e3e64">FileManager::writeVectors</a></div><div class="ttdeci">void writeVectors(const vector&lt; double &gt; &amp;data) const</div><div class="ttdoc">Запись векторов в выходной файл.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:63</div></div>
+<div class="ttc" id="aclassFileManager_html_a4e7f95c2102da1b85e9876e5951ca3d8"><div class="ttname"><a href="classFileManager.html#a4e7f95c2102da1b85e9876e5951ca3d8">FileManager::loadCredentials</a></div><div class="ttdeci">array&lt; string, 2 &gt; loadCredentials() const</div><div class="ttdoc">Загрузка учетных данных из файла конфигурации.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:8</div></div>
+<div class="ttc" id="aclassFileManager_html_a650dbeff16f7b56768105e554390939f"><div class="ttname"><a href="classFileManager.html#a650dbeff16f7b56768105e554390939f">FileManager::FileManager</a></div><div class="ttdeci">FileManager(const string &amp;configPath, const string &amp;inputPath, const string &amp;outputPath)</div><div class="ttdoc">Конструктор класса FileManager.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:3</div></div>
+<div class="ttc" id="aclassFileManager_html_a8e8cc4299102a22d88f64ccd4f96c0d3"><div class="ttname"><a href="classFileManager.html#a8e8cc4299102a22d88f64ccd4f96c0d3">FileManager::readVectors</a></div><div class="ttdeci">vector&lt; vector&lt; double &gt; &gt; readVectors() const</div><div class="ttdoc">Чтение векторов из входного файла.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:33</div></div>
+<div class="ttc" id="aclassFileManager_html_ab35d5f85142f3445748407fda84ddd49"><div class="ttname"><a href="classFileManager.html#ab35d5f85142f3445748407fda84ddd49">FileManager::getConfigPath</a></div><div class="ttdeci">const string &amp; getConfigPath() const</div><div class="ttdoc">Возвращает путь к файлу конфигурации.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:82</div></div>
+<div class="ttc" id="aclassFileManager_html_ac4cfaf245931ae2f6a9a1b4a532b42d1"><div class="ttname"><a href="classFileManager.html#ac4cfaf245931ae2f6a9a1b4a532b42d1">FileManager::getOutputPath</a></div><div class="ttdeci">const string &amp; getOutputPath() const</div><div class="ttdoc">Возвращает путь к выходному файлу.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:92</div></div>
+<div class="ttc" id="aclassFileManager_html_ac9683cc4bb9f9e3cc7be1e089670d31c"><div class="ttname"><a href="classFileManager.html#ac9683cc4bb9f9e3cc7be1e089670d31c">FileManager::getInputPath</a></div><div class="ttdeci">const string &amp; getInputPath() const</div><div class="ttdoc">Возвращает путь к входному файлу.</div><div class="ttdef"><b>Definition:</b> FileManager.cpp:87</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,86 @@
+\begin{theindex}
+
+  \item {ArgsDecoder}, \hyperpage{7}
+    \subitem {decodeArgs}, \hyperpage{7}
+    \subitem {getConfigFilePath}, \hyperpage{9}
+    \subitem {getInputFilePath}, \hyperpage{9}
+    \subitem {getOutputFilePath}, \hyperpage{9}
+    \subitem {getServerAddress}, \hyperpage{9}
+    \subitem {getServerPort}, \hyperpage{10}
+  \item {authenticate}
+    \subitem {Network}, \hyperpage{14}
+
+  \indexspace
+
+  \item {calculate}
+    \subitem {Network}, \hyperpage{15}
+  \item {connectToServer}
+    \subitem {Network}, \hyperpage{15}
+
+  \indexspace
+
+  \item {decodeArgs}
+    \subitem {ArgsDecoder}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Error}, \hyperpage{10}
+
+  \indexspace
+
+  \item {FileManager}, \hyperpage{10}
+    \subitem {FileManager}, \hyperpage{11}
+    \subitem {getConfigPath}, \hyperpage{11}
+    \subitem {getInputPath}, \hyperpage{12}
+    \subitem {getOutputPath}, \hyperpage{12}
+    \subitem {loadCredentials}, \hyperpage{12}
+    \subitem {readVectors}, \hyperpage{12}
+    \subitem {writeVectors}, \hyperpage{13}
+
+  \indexspace
+
+  \item {getConfigFilePath}
+    \subitem {ArgsDecoder}, \hyperpage{9}
+  \item {getConfigPath}
+    \subitem {FileManager}, \hyperpage{11}
+  \item {getInputFilePath}
+    \subitem {ArgsDecoder}, \hyperpage{9}
+  \item {getInputPath}
+    \subitem {FileManager}, \hyperpage{12}
+  \item {getOutputFilePath}
+    \subitem {ArgsDecoder}, \hyperpage{9}
+  \item {getOutputPath}
+    \subitem {FileManager}, \hyperpage{12}
+  \item {getServerAddress}
+    \subitem {ArgsDecoder}, \hyperpage{9}
+    \subitem {Network}, \hyperpage{15}
+  \item {getServerPort}
+    \subitem {ArgsDecoder}, \hyperpage{10}
+    \subitem {Network}, \hyperpage{16}
+
+  \indexspace
+
+  \item {loadCredentials}
+    \subitem {FileManager}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Network}, \hyperpage{13}
+    \subitem {authenticate}, \hyperpage{14}
+    \subitem {calculate}, \hyperpage{15}
+    \subitem {connectToServer}, \hyperpage{15}
+    \subitem {getServerAddress}, \hyperpage{15}
+    \subitem {getServerPort}, \hyperpage{16}
+    \subitem {Network}, \hyperpage{14}
+
+  \indexspace
+
+  \item {readVectors}
+    \subitem {FileManager}, \hyperpage{12}
+
+  \indexspace
+
+  \item {writeVectors}
+    \subitem {FileManager}, \hyperpage{13}
+
+\end{theindex}

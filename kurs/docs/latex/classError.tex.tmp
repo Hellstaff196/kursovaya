@@ -1,0 +1,53 @@
+\hypertarget{classError}{}\doxysection{Класс Error}
+\label{classError}\index{Error@{Error}}
+
+
+Класс для обработки ошибок, наследуется от std\+::runtime\+\_\+error.  
+
+
+
+
+{\ttfamily \#include $<$Error.\+h$>$}
+
+
+
+Граф наследования\+:Error\+:
+% FIG 0
+
+
+Граф связей класса Error\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classError_a0e06da181df1b153e810b2f1c46fff7c}{Error}} (const string \&message, const string \&func)
+\begin{DoxyCompactList}\small\item\em Конструктор для создания исключения с сообщением об ошибке и именем функции. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для обработки ошибок, наследуется от std\+::runtime\+\_\+error. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classError_a0e06da181df1b153e810b2f1c46fff7c}\label{classError_a0e06da181df1b153e810b2f1c46fff7c}} 
+\index{Error@{Error}!Error@{Error}}
+\index{Error@{Error}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily Error\+::\+Error (\begin{DoxyParamCaption}\item[{const string \&}]{message,  }\item[{const string \&}]{func }\end{DoxyParamCaption})}
+
+
+
+Конструктор для создания исключения с сообщением об ошибке и именем функции. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em message} & Сообщение об ошибке. \\
+\hline
+{\em func} & Имя функции, в которой произошла ошибка. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Error.\+h\item 
+Error.\+cpp\end{DoxyCompactItemize}

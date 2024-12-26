@@ -1,0 +1,44 @@
+\hypertarget{Network_8h_source}{}\doxysection{Network.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}Error.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}CryptoManager.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <sys/socket.h>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <arpa/inet.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classNetwork}{Network}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \mbox{\hyperlink{classNetwork_a6f6e7311af0785d553295edc8cb9a8f7}{Network}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&serverAddress, uint16\_t serverPort);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a3eed6df314ec49c960e669d2fd43e304}{connectToServer}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_aa1db1db6254a722dbc4acc592758a29e}{authenticate}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&username, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&password);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{56     vector<double> \mbox{\hyperlink{classNetwork_a9711540339aacde3579955a939afd089}{calculate}}(\textcolor{keyword}{const} vector<vector<double>> \&data);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{classNetwork_a721c9fc65b0221ba1cfae46d73b8e417}{closeConnection}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classNetwork_a1663672e66fa8406cdd9cfda72346384}{getServerAddress}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{75     uint16\_t \mbox{\hyperlink{classNetwork_a05593b671cebfc6c90e83d8444ae5b7b}{getServerPort}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{keyword}{private}:}
+\DoxyCodeLine{78     \textcolor{keywordtype}{string} serverAddress; }
+\DoxyCodeLine{79     uint16\_t serverPort;  }
+\DoxyCodeLine{80     \textcolor{keywordtype}{int} serverSocket;     }
+\DoxyCodeLine{81 \};}
+
+\end{DoxyCode}

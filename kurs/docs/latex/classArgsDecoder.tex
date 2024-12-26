@@ -1,0 +1,131 @@
+\hypertarget{classArgsDecoder}{}\doxysection{Класс Args\+Decoder}
+\label{classArgsDecoder}\index{ArgsDecoder@{ArgsDecoder}}
+
+
+Класс для парсинга аргументов командной строки и хранения параметров конфигурации.  
+
+
+
+
+{\ttfamily \#include $<$Args\+Decoder.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classArgsDecoder_a3eb496c3d243556422528197fc7ae095}\label{classArgsDecoder_a3eb496c3d243556422528197fc7ae095}} 
+{\bfseries Args\+Decoder} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию, инициализирует параметры с значениями по умолчанию. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classArgsDecoder_a7a75a20a3e50d01c328574fd5110ddba}{get\+Server\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает адрес сервера. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classArgsDecoder_a1068cda77fd3af972116505bb53e50a2}{get\+Server\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает порт сервера. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classArgsDecoder_af885d726d2b9fa60d8caf0a9c5649981}{get\+Input\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к входному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classArgsDecoder_a18a61c04714538dbea4019fe0d5b42b7}{get\+Output\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к выходному файлу. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classArgsDecoder_a3dc2d305ece5d59b90c1506bd82b5661}{get\+Config\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к файлу конфигурации. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArgsDecoder_a41bad240c33abe825bd56fd63e34ca41}{decode\+Args}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Парсит аргументы командной строки и инициализирует соответствующие параметры. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArgsDecoder_aca2e5bc9d1e1f47a1b073a4be82b7673}\label{classArgsDecoder_aca2e5bc9d1e1f47a1b073a4be82b7673}} 
+void {\bfseries display\+Help} () const
+\begin{DoxyCompactList}\small\item\em Отображает справку по использованию программы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для парсинга аргументов командной строки и хранения параметров конфигурации. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classArgsDecoder_a41bad240c33abe825bd56fd63e34ca41}\label{classArgsDecoder_a41bad240c33abe825bd56fd63e34ca41}} 
+\index{ArgsDecoder@{ArgsDecoder}!decodeArgs@{decodeArgs}}
+\index{decodeArgs@{decodeArgs}!ArgsDecoder@{ArgsDecoder}}
+\doxysubsubsection{\texorpdfstring{decodeArgs()}{decodeArgs()}}
+{\footnotesize\ttfamily void Args\+Decoder\+::decode\+Args (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Парсит аргументы командной строки и инициализирует соответствующие параметры. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em argc} & Количество аргументов. \\
+\hline
+{\em argv} & Массив аргументов. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если переданы неверные или недостаточные аргументы. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classArgsDecoder_a3dc2d305ece5d59b90c1506bd82b5661}\label{classArgsDecoder_a3dc2d305ece5d59b90c1506bd82b5661}} 
+\index{ArgsDecoder@{ArgsDecoder}!getConfigFilePath@{getConfigFilePath}}
+\index{getConfigFilePath@{getConfigFilePath}!ArgsDecoder@{ArgsDecoder}}
+\doxysubsubsection{\texorpdfstring{getConfigFilePath()}{getConfigFilePath()}}
+{\footnotesize\ttfamily string Args\+Decoder\+::get\+Config\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArgsDecoder_af885d726d2b9fa60d8caf0a9c5649981}\label{classArgsDecoder_af885d726d2b9fa60d8caf0a9c5649981}} 
+\index{ArgsDecoder@{ArgsDecoder}!getInputFilePath@{getInputFilePath}}
+\index{getInputFilePath@{getInputFilePath}!ArgsDecoder@{ArgsDecoder}}
+\doxysubsubsection{\texorpdfstring{getInputFilePath()}{getInputFilePath()}}
+{\footnotesize\ttfamily string Args\+Decoder\+::get\+Input\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к входному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArgsDecoder_a18a61c04714538dbea4019fe0d5b42b7}\label{classArgsDecoder_a18a61c04714538dbea4019fe0d5b42b7}} 
+\index{ArgsDecoder@{ArgsDecoder}!getOutputFilePath@{getOutputFilePath}}
+\index{getOutputFilePath@{getOutputFilePath}!ArgsDecoder@{ArgsDecoder}}
+\doxysubsubsection{\texorpdfstring{getOutputFilePath()}{getOutputFilePath()}}
+{\footnotesize\ttfamily string Args\+Decoder\+::get\+Output\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к выходному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArgsDecoder_a7a75a20a3e50d01c328574fd5110ddba}\label{classArgsDecoder_a7a75a20a3e50d01c328574fd5110ddba}} 
+\index{ArgsDecoder@{ArgsDecoder}!getServerAddress@{getServerAddress}}
+\index{getServerAddress@{getServerAddress}!ArgsDecoder@{ArgsDecoder}}
+\doxysubsubsection{\texorpdfstring{getServerAddress()}{getServerAddress()}}
+{\footnotesize\ttfamily string Args\+Decoder\+::get\+Server\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает адрес сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classArgsDecoder_a1068cda77fd3af972116505bb53e50a2}\label{classArgsDecoder_a1068cda77fd3af972116505bb53e50a2}} 
+\index{ArgsDecoder@{ArgsDecoder}!getServerPort@{getServerPort}}
+\index{getServerPort@{getServerPort}!ArgsDecoder@{ArgsDecoder}}
+\doxysubsubsection{\texorpdfstring{getServerPort()}{getServerPort()}}
+{\footnotesize\ttfamily int Args\+Decoder\+::get\+Server\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает порт сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера в виде целого числа. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Args\+Decoder.\+h\item 
+Args\+Decoder.\+cpp\end{DoxyCompactItemize}

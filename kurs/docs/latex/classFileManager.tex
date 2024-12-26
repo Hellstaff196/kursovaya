@@ -1,0 +1,157 @@
+\hypertarget{classFileManager}{}\doxysection{Класс File\+Manager}
+\label{classFileManager}\index{FileManager@{FileManager}}
+
+
+Класс для управления файлами конфигурации, входных и выходных данных.  
+
+
+
+
+{\ttfamily \#include $<$File\+Manager.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFileManager_a650dbeff16f7b56768105e554390939f}{File\+Manager}} (const string \&config\+Path, const string \&input\+Path, const string \&output\+Path)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classFileManager}{File\+Manager}}. \end{DoxyCompactList}\item 
+array$<$ string, 2 $>$ \mbox{\hyperlink{classFileManager_a4e7f95c2102da1b85e9876e5951ca3d8}{load\+Credentials}} () const
+\begin{DoxyCompactList}\small\item\em Загрузка учетных данных из файла конфигурации. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classFileManager_a8e8cc4299102a22d88f64ccd4f96c0d3}{read\+Vectors}} () const
+\begin{DoxyCompactList}\small\item\em Чтение векторов из входного файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFileManager_a4881171db0ab8aea96d2bdf9ca5e3e64}{write\+Vectors}} (const vector$<$ double $>$ \&data) const
+\begin{DoxyCompactList}\small\item\em Запись векторов в выходной файл. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classFileManager_ab35d5f85142f3445748407fda84ddd49}{get\+Config\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к файлу конфигурации. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classFileManager_ac9683cc4bb9f9e3cc7be1e089670d31c}{get\+Input\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к входному файлу. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classFileManager_ac4cfaf245931ae2f6a9a1b4a532b42d1}{get\+Output\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает путь к выходному файлу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления файлами конфигурации, входных и выходных данных. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classFileManager_a650dbeff16f7b56768105e554390939f}\label{classFileManager_a650dbeff16f7b56768105e554390939f}} 
+\index{FileManager@{FileManager}!FileManager@{FileManager}}
+\index{FileManager@{FileManager}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{FileManager()}{FileManager()}}
+{\footnotesize\ttfamily File\+Manager\+::\+File\+Manager (\begin{DoxyParamCaption}\item[{const string \&}]{config\+Path,  }\item[{const string \&}]{input\+Path,  }\item[{const string \&}]{output\+Path }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classFileManager}{File\+Manager}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em config\+Path} & Путь к файлу конфигурации. \\
+\hline
+{\em input\+Path} & Путь к входному файлу. \\
+\hline
+{\em output\+Path} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classFileManager_ab35d5f85142f3445748407fda84ddd49}\label{classFileManager_ab35d5f85142f3445748407fda84ddd49}} 
+\index{FileManager@{FileManager}!getConfigPath@{getConfigPath}}
+\index{getConfigPath@{getConfigPath}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{getConfigPath()}{getConfigPath()}}
+{\footnotesize\ttfamily const string \& File\+Manager\+::get\+Config\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к файлу конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к файлу конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileManager_ac9683cc4bb9f9e3cc7be1e089670d31c}\label{classFileManager_ac9683cc4bb9f9e3cc7be1e089670d31c}} 
+\index{FileManager@{FileManager}!getInputPath@{getInputPath}}
+\index{getInputPath@{getInputPath}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{getInputPath()}{getInputPath()}}
+{\footnotesize\ttfamily const string \& File\+Manager\+::get\+Input\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к входному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к входному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileManager_ac4cfaf245931ae2f6a9a1b4a532b42d1}\label{classFileManager_ac4cfaf245931ae2f6a9a1b4a532b42d1}} 
+\index{FileManager@{FileManager}!getOutputPath@{getOutputPath}}
+\index{getOutputPath@{getOutputPath}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{getOutputPath()}{getOutputPath()}}
+{\footnotesize\ttfamily const string \& File\+Manager\+::get\+Output\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает путь к выходному файлу. 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к выходному файлу. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFileManager_a4e7f95c2102da1b85e9876e5951ca3d8}\label{classFileManager_a4e7f95c2102da1b85e9876e5951ca3d8}} 
+\index{FileManager@{FileManager}!loadCredentials@{loadCredentials}}
+\index{loadCredentials@{loadCredentials}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{loadCredentials()}{loadCredentials()}}
+{\footnotesize\ttfamily array$<$ string, 2 $>$ File\+Manager\+::load\+Credentials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Загрузка учетных данных из файла конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Массив строк, содержащий учетные данные (логин и пароль). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если файл конфигурации не найден или содержит ошибки. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classFileManager_a8e8cc4299102a22d88f64ccd4f96c0d3}\label{classFileManager_a8e8cc4299102a22d88f64ccd4f96c0d3}} 
+\index{FileManager@{FileManager}!readVectors@{readVectors}}
+\index{readVectors@{readVectors}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{readVectors()}{readVectors()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ double $>$ $>$ File\+Manager\+::read\+Vectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Чтение векторов из входного файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Вектор векторов, содержащий данные. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если входной файл не найден или содержит ошибки. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classFileManager_a4881171db0ab8aea96d2bdf9ca5e3e64}\label{classFileManager_a4881171db0ab8aea96d2bdf9ca5e3e64}} 
+\index{FileManager@{FileManager}!writeVectors@{writeVectors}}
+\index{writeVectors@{writeVectors}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{writeVectors()}{writeVectors()}}
+{\footnotesize\ttfamily void File\+Manager\+::write\+Vectors (\begin{DoxyParamCaption}\item[{const vector$<$ double $>$ \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+Запись векторов в выходной файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор, содержащий данные для записи. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если выходной файл недоступен для записи. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+File\+Manager.\+h\item 
+File\+Manager.\+cpp\end{DoxyCompactItemize}

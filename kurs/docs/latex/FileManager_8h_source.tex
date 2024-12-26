@@ -1,0 +1,44 @@
+\hypertarget{FileManager_8h_source}{}\doxysection{File\+Manager.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iomanip>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Error.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classFileManager}{FileManager}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{classFileManager_a650dbeff16f7b56768105e554390939f}{FileManager}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \&configPath, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&inputPath, \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&outputPath);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{36     array<string, 2> \mbox{\hyperlink{classFileManager_a4e7f95c2102da1b85e9876e5951ca3d8}{loadCredentials}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{44     vector<vector<double>> \mbox{\hyperlink{classFileManager_a8e8cc4299102a22d88f64ccd4f96c0d3}{readVectors}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{classFileManager_a4881171db0ab8aea96d2bdf9ca5e3e64}{writeVectors}}(\textcolor{keyword}{const} vector<double> \&data) \textcolor{keyword}{const};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classFileManager_ab35d5f85142f3445748407fda84ddd49}{getConfigPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classFileManager_ac9683cc4bb9f9e3cc7be1e089670d31c}{getInputPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{73     \textcolor{keyword}{const} \textcolor{keywordtype}{string} \&\mbox{\hyperlink{classFileManager_ac4cfaf245931ae2f6a9a1b4a532b42d1}{getOutputPath}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{keyword}{private}:}
+\DoxyCodeLine{76     \textcolor{keywordtype}{string} configPath;    }
+\DoxyCodeLine{77     \textcolor{keywordtype}{string} inputPath;     }
+\DoxyCodeLine{78     \textcolor{keywordtype}{string} outputPath;    }
+\DoxyCodeLine{79 \};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{86 \textcolor{keywordtype}{void} printVector(\textcolor{keyword}{const} vector<double> \&data);}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{93 \textcolor{keywordtype}{void} printVectors(\textcolor{keyword}{const} vector<vector<double>> \&data);}
+
+\end{DoxyCode}

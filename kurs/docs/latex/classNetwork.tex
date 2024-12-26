@@ -1,0 +1,147 @@
+\hypertarget{classNetwork}{}\doxysection{Класс Network}
+\label{classNetwork}\index{Network@{Network}}
+
+
+Класс для управления сетевым подключением к серверу.  
+
+
+
+
+{\ttfamily \#include $<$Network.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNetwork_a6f6e7311af0785d553295edc8cb9a8f7}{Network}} (const string \&server\+Address, uint16\+\_\+t server\+Port)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classNetwork}{Network}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetwork_a3eed6df314ec49c960e669d2fd43e304}{connect\+To\+Server}} ()
+\begin{DoxyCompactList}\small\item\em Устанавливает соединение с сервером. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNetwork_aa1db1db6254a722dbc4acc592758a29e}{authenticate}} (const string \&username, const string \&password)
+\begin{DoxyCompactList}\small\item\em Аутентифицирует пользователя на сервере. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{classNetwork_a9711540339aacde3579955a939afd089}{calculate}} (const vector$<$ vector$<$ double $>$ $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Отправляет данные на сервер и получает результат вычислений. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classNetwork_a721c9fc65b0221ba1cfae46d73b8e417}\label{classNetwork_a721c9fc65b0221ba1cfae46d73b8e417}} 
+void {\bfseries close\+Connection} ()
+\begin{DoxyCompactList}\small\item\em Закрывает соединение с сервером. \end{DoxyCompactList}\item 
+const string \& \mbox{\hyperlink{classNetwork_a1663672e66fa8406cdd9cfda72346384}{get\+Server\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает адрес сервера. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classNetwork_a05593b671cebfc6c90e83d8444ae5b7b}{get\+Server\+Port}} () const
+\begin{DoxyCompactList}\small\item\em Возвращает порт сервера. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для управления сетевым подключением к серверу. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classNetwork_a6f6e7311af0785d553295edc8cb9a8f7}\label{classNetwork_a6f6e7311af0785d553295edc8cb9a8f7}} 
+\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{Network()}{Network()}}
+{\footnotesize\ttfamily Network\+::\+Network (\begin{DoxyParamCaption}\item[{const string \&}]{server\+Address,  }\item[{uint16\+\_\+t}]{server\+Port }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classNetwork}{Network}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em server\+Address} & Адрес сервера. \\
+\hline
+{\em server\+Port} & Порт сервера. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classNetwork_aa1db1db6254a722dbc4acc592758a29e}\label{classNetwork_aa1db1db6254a722dbc4acc592758a29e}} 
+\index{Network@{Network}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily void Network\+::authenticate (\begin{DoxyParamCaption}\item[{const string \&}]{username,  }\item[{const string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Аутентифицирует пользователя на сервере. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em username} & Имя пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если аутентификация не удалась. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetwork_a9711540339aacde3579955a939afd089}\label{classNetwork_a9711540339aacde3579955a939afd089}} 
+\index{Network@{Network}!calculate@{calculate}}
+\index{calculate@{calculate}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Network\+::calculate (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ double $>$ $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Отправляет данные на сервер и получает результат вычислений. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор векторов, содержащий данные для отправки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Вектор, содержащий результаты вычислений. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если произошла ошибка при отправке данных или получении результатов. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetwork_a3eed6df314ec49c960e669d2fd43e304}\label{classNetwork_a3eed6df314ec49c960e669d2fd43e304}} 
+\index{Network@{Network}!connectToServer@{connectToServer}}
+\index{connectToServer@{connectToServer}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{connectToServer()}{connectToServer()}}
+{\footnotesize\ttfamily void Network\+::connect\+To\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Устанавливает соединение с сервером. 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & Если не удалось установить соединение. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classNetwork_a1663672e66fa8406cdd9cfda72346384}\label{classNetwork_a1663672e66fa8406cdd9cfda72346384}} 
+\index{Network@{Network}!getServerAddress@{getServerAddress}}
+\index{getServerAddress@{getServerAddress}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{getServerAddress()}{getServerAddress()}}
+{\footnotesize\ttfamily const string \& Network\+::get\+Server\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает адрес сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Адрес сервера в виде строки. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classNetwork_a05593b671cebfc6c90e83d8444ae5b7b}\label{classNetwork_a05593b671cebfc6c90e83d8444ae5b7b}} 
+\index{Network@{Network}!getServerPort@{getServerPort}}
+\index{getServerPort@{getServerPort}!Network@{Network}}
+\doxysubsubsection{\texorpdfstring{getServerPort()}{getServerPort()}}
+{\footnotesize\ttfamily uint16\+\_\+t Network\+::get\+Server\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Возвращает порт сервера. 
+
+\begin{DoxyReturn}{Возвращает}
+Порт сервера в виде целого числа. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Network.\+h\item 
+Network.\+cpp\end{DoxyCompactItemize}
